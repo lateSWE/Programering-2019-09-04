@@ -4,15 +4,21 @@ public class No2 {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
         while (true){
-            System.out.println("Enter some text");
+            //frågar om en text input
+            System.out.print("Enter some text to be reversed: ");
             String text = sc.nextLine();
+            System.out.print("The reverse is: \"");
 
-
-            System.out.println("The reverse is: ");
-            String reverse="";
-            for (int i = text.length(); i < 0; i--) {
+            //en "funktion" som skriver ut en string baklänges
+            for (int i = text.length()-1; i >= 0; i--) {
                 System.out.print(text.charAt(i));
             }
+            System.out.print("\"");
+
+
+            //lite spacing
+            System.out.println();
+            System.out.println();
         }
     }
 }
